@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer</title>
+    </head>
+    <body>
+
+        <div id="clock-container" style="font-size: 3rem;">
+            <div class="clock-text"></div>
+        </div>
+
+        <div id="stopwatch-container" style="display: none;">
+            <div class="stopwatch-text" style="font-size: 3rem">
+                <span class="stopwatch-text--hours">00</span> : <span class="stopwatch-text--minutes">00</span> : <span class="stopwatch-text--seconds">00</span>
+            </div>
+            <button class="stopwatch-button--start">Start</button>
+            <button class="stopwatch-button--pause">Pause</button>
+            <button class="stopwatch-button--stop">Stop</button>
+        </div>
+
+        <div id="timer-container" style="display: none;">
+            <div class="timer-box" style="font-size: 3rem;">
+                <span class="timer-box--hours">
+                    00
+                </span><input type="number" class="timer-box--hours-input" style="display: none;"> : 
+                <span class="timer-box--minutes">
+                    00
+                </span><input type="number" class="timer-box--minutes-input" style="display: none;"> : 
+                <span class="timer-box--seconds">
+                    00
+                </span><input type="number" class="timer-box--seconds-input" style="display: none;">
+            </div>
+            <button class="timer-button--start">Start</button>
+            <button class="timer-button--pause">Pause</button>
+            <button class="timer-button--stop">Stop</button>
+        </div>
+
+        <div id="clock-change-buttons">
+            <button class="clock-button">Clock</button>
+            <button class="timer-button">Timer</button>
+            <button class="stopwatch-button">Stopwatch</button>
+        </div>
+    </body>
+    <script src="./clock.js"></script>
+    <script src="./stopwatch.js"></script>
+    <script src="./timer.js"></script>
+    
+</html>
